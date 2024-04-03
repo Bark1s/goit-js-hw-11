@@ -15,7 +15,7 @@ export function renderImages(array) {
         iziToast.show({
             message: 'Sorry, there are no images matching your search query. Please try again!',
             color: 'red',
-            position: 'topCenter',
+            position: 'topRight',
         });
         hideLoadScreen();
     } else {

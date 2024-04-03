@@ -32,6 +32,7 @@ form.addEventListener("submit", (event) => {
     if (inputValue !== "") {
         fetchImages(inputValue).then((resolve) => {
             renderImages(resolve.hits);
+            hideLoadScreen();
             form.reset();
         })
             .catch((error) => {
@@ -42,7 +43,7 @@ form.addEventListener("submit", (event) => {
         iziToast.show({
             message: 'Search field is empty',
             color: 'red',
-            position: 'topCenter',
+            position: 'topRight',
         });
         hideLoadScreen();
     }

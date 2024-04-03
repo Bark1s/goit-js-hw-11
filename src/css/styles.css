@@ -1,3 +1,19 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  display: flex;
+  flex-direction: column;
+  margin: 24px;
+}
+
 .loader {
   display: block;
   position: relative;
@@ -55,4 +71,101 @@
 .is-hidden {
   opacity: 0;
   visibility: hidden;
+}
+
+.form {
+  margin: 0px auto 36px;
+}
+
+.gallery {
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  width: 1128px;
+  gap: 24px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item-box {
+  width: 360px;
+  border: 1px solid #d3d3d3;
+}
+
+.gallery img {
+  width: 100%;
+  height: 152px;
+  object-fit: cover;
+}
+
+.stat-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+}
+
+.stat-name {
+  font-weight: 600;
+  line-height: 1.33333;
+}
+
+.stat-value {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  column-gap: 24px;
+  align-items: center;
+  line-height: 2;
+}
+
+.form {
+  display: flex;
+  column-gap: 8px;
+}
+
+.form button {
+  display: block;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 95px;
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+  transition: background-color 250ms linear;
+}
+
+.form button:hover {
+  background-color: #6c8cff;
+}
+
+.search {
+  border-radius: 4px;
+  width: 272px;
+  height: 40px;
+  border: 1px solid #d3d3d3;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding: 8px 16px;
+}
+
+.search:focus {
+  outline: none;
+}
+
+.search::placeholder {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #d3d3d3;
 }
